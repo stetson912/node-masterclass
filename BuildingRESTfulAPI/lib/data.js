@@ -56,7 +56,7 @@ lib.read = function(dir,file,callback){
 };
 
 // Update data inside a file
-lib.update = function(dir, file, data,callback){
+lib.update = function(dir, file, data, callback){
     // Open the file for writing
     fs.open(lib.baseDir+dir+'/'+file+'.json','r+',function(err,fileDescriptor){
         if(!err && fileDescriptor){
