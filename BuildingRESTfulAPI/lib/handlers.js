@@ -393,7 +393,7 @@ handlers._checks = {};
 // required datat: protocol, url, method,sucessCodes, timeoutSeconds
 // optional data: none
 
-handlers._checks.post = function(data,callback_){
+handlers._checks.post = function(data,callback){
   // validate inputs.
   var protocol = typeof(data.payload.protocol) == 'string' && ['https','http'].indexOf(data.payload.protocol) > -1 ? data.payload.protocol : false;
   var url = typeof(data.payload.url) == 'string' && data.payload.url.trim().length > 0 ? data.payload.url.trim() : false;
