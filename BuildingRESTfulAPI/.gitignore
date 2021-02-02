@@ -1,0 +1,9 @@
+# ignore .env for environment variables for dotenv
+.env
+# ignore node modules directory
+node_modules/
+# ignore log files
+.log
+*.log
+# ignore ide specific files
+.vscode/
