@@ -416,7 +416,7 @@ handlers.checks = function(data,callback){
 handlers._checks = {};
 
 // Checks post
-// required datat: protocol, url, method,sucessCodes, timeoutSeconds
+// required data: protocol, url, method,sucessCodes, timeoutSeconds
 // optional data: none
 
 handlers._checks.post = function(data,callback){

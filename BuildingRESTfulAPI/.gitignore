@@ -7,3 +7,8 @@ node_modules/
 *.log
 # ignore ide specific files
 .vscode/
+#ignore logs directory
+.log/
+#ignore .data directory
+.data/
+

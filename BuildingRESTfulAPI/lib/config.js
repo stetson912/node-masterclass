@@ -1,3 +1,4 @@
+require('dotenv').config();
 /*
  * Create and export configuration variables
  *
@@ -14,9 +15,9 @@ environments.staging = {
   'hashingSecret': 'thisIsASecret',
   'maxChecks': 5,
   'twilio' : {
-    'accountSid':process.env.TWILIOSID,
-    'authToken':process.env.TWILIOAUTHTOKEN,
-    'fromPhone':process.env.TWILIOFROMPHONE
+    'accountSid':process.env.TWILIO_SID,
+    'authToken':process.env.TWILIO_AUTH_TOKEN,
+    'fromPhone':process.env.TWILIO_FROM_PHONE
   }
 };
 
@@ -28,10 +29,11 @@ environments.production = {
   'hashingSecret': 'thisIsAlsoASecret',
   'maxChecks': 5,
   'twilio' : {
-    'accountSid':process.env.TWILIOSID,
-    'authToken':process.env.TWILIOAUTHTOKEN,
-    'fromPhone':process.env.TWILIOFROMPHONE
+    'accountSid':process.env.TWILIO_ACCOUNT_SID,
+    'authToken':process.env.TWILIO_AUTH_TOKEN,
+    'fromPhone':process.env.TWILIO_FROM_PHONE
   }
+  // for env in twilio use process.env.<env variable name>
 };
 
 // Determine which environment was passed as a command-line argument
